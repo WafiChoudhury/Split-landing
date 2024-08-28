@@ -1,0 +1,275 @@
+/* App.css */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #1B0E80, #4b6cb7);
+  padding: 20px;
+  
+}
+
+.title {
+  font-size: 3rem;
+  color: #C7A5A5;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 600px; /* Increased width */
+  height: auto;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #C7A5A5;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.get-started-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 10px 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #333;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1200px;
+  
+}
+
+.info-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #080429;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.info-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.info-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 40px;
+
+}
+
+.info-title {
+  font-size: 2.5rem;
+  color: #e8e8e8;
+  margin-bottom: 20px;
+  color: #C7A5A5;
+
+}
+
+.info-description {
+  font-size: 1.1rem;
+  color: #a9a9a9;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.read-more-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #1c1c1c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #333;
+}
+
+.faq-section, .cta-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  align-items: center;
+}
+
+.cta-section{
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  
+}
+.section-title {
+  font-size: 2.5rem;
+  color: #C7A5A5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.faq-list {
+  background-color: #1a1a2e;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.faq-item {
+  border-bottom: 1px solid #2a2a3e;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 20px;
+  background: none;
+  border: none;
+  text-align: left;
+  color: #e8e8e8;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  padding: 0 20px 20px;
+  color: #a9a9a9;
+}
+
+.cta-button {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #1c1c1c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #333;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #1B0E80;
+  color: white;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px; /* Adjust as needed */
+}
+
+.circle {
+  width: 150px; /* Adjust circle size as needed */
+  height: 150px; /* Adjust circle size as needed */
+  background-color: white;
+  border-radius: 50%;
+  margin: 20px; /* Adjust spacing between circles as needed */
+}
+
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 500px; /* Adjust this to match your previous image width */
+  padding: 20px; /* Adjust this to match your previous image padding */
+}
+
+.circle-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-top: 200px;
+  padding-bottom: 100px;
+
+}
+
+.engineers-section {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+
+.engineers-section .section-title {
+  font-size: 2rem;
+  color: #C7A5A5;
+  margin-bottom: 20px;
+  margin-bottom: 0px;
+
+}
+
+.company-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 200px;
+}
+
+.company-logo {
+  font-weight: 900; /* Extra bold */
+  font-size: 1rem;
+  color: #000000; /* Matt black */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

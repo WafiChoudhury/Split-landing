@@ -1,0 +1,20 @@
+.circles-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100vh;
+    pointer-events: none; /* Make circles not interactable */
+    z-index: 10; /* Ensure circles stay on top */
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid;
+    background: transparent;
+}
