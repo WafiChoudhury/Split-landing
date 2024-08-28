@@ -1,13 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import '../styles/App.css'; // Assuming you have a CSS file for styling
-import imageFile from '../shader.png'; // Update with the correct path to your image file
-import secondImage from '../shader2.png'; // Update with the correct path to your image file
-import thirdImage from '../shader3.png'; // Update with the correct path to your image file
-import { useState } from 'react';
-import { useEffect } from 'react';
-import JoinWaitlistButton from './JoinWaitlistButton'; // Import JoinWaitlistButton component
-import ReadMoreButton from './ReadMoreButton';
+import '../styles/App.css';
+import secondImage from '../computer.png';
+import thirdImage from '../editor.png';
+import JoinWaitlistButton from './JoinWaitlistButton';
 
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,32 +17,6 @@ const FAQItem = ({ question, answer }) => {
       {isOpen && <p className="faq-answer">{answer}</p>}
     </div>
   );
-};
-
-const circleVariants = {
-  hidden: { 
-    opacity: 0,
-    pathLength: 0,
-    cx: 200
-  },
-  visible: (custom) => ({
-    opacity: 1,
-    pathLength: 1,
-    cx: 200 + (custom * 90),
-    transition: {
-      pathLength: { duration: 2, ease: "easeInOut" },
-      opacity: { duration: 0.5 },
-      cx: { duration: 2, ease: "easeInOut", delay: 2 } // Delay the split
-    }
-  }),
-  hover: {
-    scale: 0.9,
-    transition: {
-      duration: 0.2,
-      yoyo: Infinity,
-      ease: "easeInOut",
-    },
-  }
 };
 
 const useInView = (options) => {
@@ -75,10 +45,11 @@ const useInView = (options) => {
 const PageComponent = () => {
   const [ref1, inView1] = useInView({ threshold: 0.2 });
   const [ref2, inView2] = useInView({ threshold: 0.2 });
+
   return (
     <div className="page-wrapper">
       <motion.h1
-        className="subtitle"
+        className="wafi"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -86,56 +57,19 @@ const PageComponent = () => {
         SplitAI
       </motion.h1>
       
-      <motion.h1
-              className="title"
+     <div className="title">
+        <span style={{ display: 'block', marginBottom: '0px' }}>
+          Monetize your GPU
+        </span>
+        <span style={{ display: 'block' }}>
+          Power ML Developers
+        </span>
+        </div>
 
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 }}
-        >
-       <span style={{ display: 'block', marginBottom: '20px' }}>
-    Monetize your GPU
-  </span>
-  <span style={{ display: 'block' }}>
-    Power ML Developers
-  </span>
-
-        </motion.h1>
-
-      <div className="image-container">
-        <motion.svg
-          className="circle-svg"
-          viewBox="0 0 400 200"
-          initial="hidden"
-          animate="visible"
-          whileHover="hover"
-        >
-          <motion.circle
-            cx="100"
-            cy="100"
-            r="80"
-            stroke="white"
-            strokeWidth="4"
-            fill="transparent"
-            variants={circleVariants}
-            custom={-1}
-          />
-          <motion.circle
-            cx="100"
-            cy="100"
-            r="80"
-            stroke="white"
-            strokeWidth="4"
-            fill="transparent"
-            variants={circleVariants}
-            custom={1}
-          />
-        </motion.svg>
+      <div className="subheading1">
+        The world's first distributed cloud GPU marketplace for ML workloads
       </div>
-      <div className='first-wrapper'>
-       
-
-            </div>
+      <div className='first-wrapper'></div>
 
       <section className="cta-section">
         <JoinWaitlistButton /> 
@@ -149,10 +83,10 @@ const PageComponent = () => {
             animate={inView1 ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
             transition={{ duration: 1 }}
           >
-            <img src={secondImage} className="info-image" alt="Make Money" />
+            <img src={secondImage} className="info-image" alt="Make Money" width={400} height={400} />
           </motion.div>
           <div className="info-text">
-            <h2 className="info-title">Make Money</h2>
+              <h2 className="info-title">Contribute your GPU & <br></br>Start Earning Today</h2>
             <p className="info-description">
               Get paid by the hour while Split runs quietly in the background of your device. Split harnesses your devices extra computing power to power ML developers.
             </p>
@@ -161,9 +95,10 @@ const PageComponent = () => {
 
         <div className="info-block" ref={ref2}>
           <div className="info-text">
-            <h2 className="info-title">Save Money</h2>
+            <h2 className="info-title">Access Cloud Computing Power for Cheap</h2>
+
             <p className="info-description">
-              Split gives enterprises and individuals powerful and cost effective access to inference, model training, and more. 
+              Developers can now access computing resources for inference, training, & fine tuning for cheaper than ever before! 
             </p>
           </div>
           <motion.div
@@ -172,32 +107,35 @@ const PageComponent = () => {
             animate={inView2 ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
             transition={{ duration: 1 }}
           >
-            <img src={thirdImage} className="info-image" alt="Save Money" />
+            <img src={thirdImage} className="info-image" alt="Save Money" raidus={100}/>
           </motion.div>
         </div>
       </section>
 
       <section className="engineers-section">
-        <h2         className="title"
-        >Built by Engineers From</h2>
+        <h2 className="title">Built by Engineers From</h2>
         <div className="company-logos">
           <motion.span className="company-logo" whileHover={{ scale: 1.1 }}>Google</motion.span>
           <motion.span className="company-logo" whileHover={{ scale: 1.1 }}>Disney</motion.span>
           <motion.span className="company-logo" whileHover={{ scale: 1.1 }}>Reddit</motion.span>
         </div>
       </section>
+
       <section className="faq-section">
         <h2 className="section-title">FAQ</h2>
         <div className="faq-list">
           <FAQItem 
             question="What type of GPUs are on split?" 
-            answer="Answer about GPU types on split..."
+            answer="Split utilizes a distributed network of devices that contribute their idle compute power" 
           />
           <FAQItem 
             question="How safe is split?" 
             answer="Split retains no personal or identifying data and adheres to industry security standards"
           />
-          {/* Add more FAQ items as needed */}
+           <FAQItem 
+            question="What kind of models are supported on Split?" 
+            answer="We support public and custom models such as OpenLLaMA, OpenLM, Mistral and more"
+          />
         </div>
       </section>
 
@@ -206,8 +144,6 @@ const PageComponent = () => {
         <JoinWaitlistButton /> 
       </section>
     </div>
-
-    
   );
 };
 

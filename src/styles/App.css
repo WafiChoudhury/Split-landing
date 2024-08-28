@@ -10,13 +10,26 @@
   
 }
 
+.dm-sans-normal {
+ 
+  display: 'block';
+  margin-bottom: '20px';
+  
+}
+
 .title {
-  font-size: 3rem;
+  font-size: 5rem;
+  margin-top: 80px;
   color: #ffffff;
   text-align: center;
-  margin-right: 300px;
-  margin-left: 300px;
-  margin-bottom: 20px;
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-bottom: 0px;
+
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .image {
@@ -24,30 +37,38 @@
   height: auto;
 }
 
-.subtitle {
-  font-size: 1.5rem;
+
+.wafi {
+  font-size:30px;
   color: #ffffff;
   margin: 10px 0;
   text-align: left;
   padding-right: 1100px;
 }
+.subheading1 {
+  font-size:20px;
+  color: #cecccc;
+  margin: 10px 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
 
 .get-started-btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
+  background-color: #1e88e500;
+  color: #ffffff;
+  font-size: 20px;
   padding: 15px 15px;
-  font-size: 1.5rem;
-  color: black;
-  background-color: white;
   border: none;
-  border-radius: 40px;
+  border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  border: #ffffff 2px solid;
+  margin-top: px;
+  margin-bottom: 100px;
   
 }
+
 
 
 .get-started-btn:hover {
@@ -88,9 +109,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #1a1a2e;
+  background: #1d1d1d;
   padding: 40px;
-  border-radius: 10px;
+  border-radius: 40px;
+  border-style: solid;
+  
+  border: 1px solid #333;
 }
 
 .info-image-container {
@@ -103,6 +127,7 @@
 .info-image {
   max-width: 100%;
   height: auto;
+  border-radius: 20px;
 }
 
 .info-text {
@@ -174,7 +199,7 @@
 }
 
 .faq-list {
-  background-color: #1a1a2e;
+  background: #1d1d1d;
   border-radius: 10px;
   overflow: hidden;
 }
