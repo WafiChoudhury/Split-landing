@@ -20,6 +20,7 @@ const JoinWaitlistButton = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1 }}
           onClick={handleClick} // Show form on button click
+          
         >
           Join the waitlist
         </motion.button>

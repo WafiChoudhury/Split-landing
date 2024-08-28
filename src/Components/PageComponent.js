@@ -82,7 +82,7 @@ const PageComponent = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Split
+        SplitAI
       </motion.h1>
       
       <div className="image-container">
@@ -115,16 +115,21 @@ const PageComponent = () => {
           />
         </motion.svg>
       </div>
+      <div className='first-wrapper'>
+        <motion.p
+          className="subtitle"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0 }}
+        >
+          The world's first decentralized cloud GPU marketplace
+        </motion.p>
 
-      <motion.p
-        className="subtitle"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 3 }}
-      >
-        The world's first decentralized cloud GPU marketplace
-      </motion.p>
-      
+            </div>
+
+      <section className="cta-section">
+        <JoinWaitlistButton /> 
+      </section>
 
       <section className="info-section">
         <div className="info-block" ref={ref1}>
@@ -139,7 +144,7 @@ const PageComponent = () => {
           <div className="info-text">
             <h2 className="info-title">Make Money</h2>
             <p className="info-description">
-              Get paid by the hour while Split runs quietly in the background of your device
+              Get paid by the hour while Split runs quietly in the background of your device. Split harnesses your devices extra computing power to power ML developers.
             </p>
             <button className="read-more-btn">Read More</button>
           </div>
@@ -149,7 +154,7 @@ const PageComponent = () => {
           <div className="info-text">
             <h2 className="info-title">Save Money</h2>
             <p className="info-description">
-              Split gives enterprises and individuals cheap and powerful compute options
+              Split gives enterprises and individuals powerful and cost effective access to inference, model training, and more. 
             </p>
             <button className="read-more-btn">Read More</button>
           </div>
@@ -169,8 +174,8 @@ const PageComponent = () => {
         >Built by Engineers From</h2>
         <div className="company-logos">
           <motion.span className="company-logo" whileHover={{ scale: 1.1 }}>Google</motion.span>
-          <motion.span className="company-logo" whileHover={{ scale: 1.1 }}>Reddit</motion.span>
           <motion.span className="company-logo" whileHover={{ scale: 1.1 }}>Disney</motion.span>
+          <motion.span className="company-logo" whileHover={{ scale: 1.1 }}>Reddit</motion.span>
         </div>
       </section>
       <section className="faq-section">
