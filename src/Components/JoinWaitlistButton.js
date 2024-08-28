@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import EmailForm from './EmailForm'; // Import your EmailForm component here
+import EmailForm from './EmailForm.js'; // Import your EmailForm component here
 
 const JoinWaitlistButton = () => {
   const [showForm, setShowForm] = useState(false); // State to manage form display
