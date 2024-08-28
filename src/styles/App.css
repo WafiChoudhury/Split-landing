@@ -12,7 +12,10 @@
 
 .title {
   font-size: 3rem;
-  color: #C7A5A5;
+  color: #ffffff;
+  text-align: center;
+  margin-right: 300px;
+  margin-left: 300px;
   margin-bottom: 20px;
 }
 
@@ -22,10 +25,11 @@
 }
 
 .subtitle {
-  font-size: 1.25rem;
-  color: #C7A5A5;
-  margin: 20px 0;
-  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 10px 0;
+  text-align: left;
+  padding-right: 1100px;
 }
 
 .get-started-btn {
@@ -64,7 +68,7 @@
 }
 .subtitle {
   font-size: 1.25rem;
-  color: #C7A5A5;
+  color: #ffffff;
   margin: 10px ; /* Reduce the margin to move it up */
   text-align: center;
   padding-bottom:25px;
@@ -114,7 +118,7 @@
   font-size: 2.5rem;
   color: #e8e8e8;
   margin-bottom: 20px;
-  color: #C7A5A5;
+  color: #ffffff;
 
 }
 
@@ -164,7 +168,7 @@
 }
 .section-title {
   font-size: 2.5rem;
-  color: #C7A5A5;
+  color: #ffffff;
   margin-bottom: 20px;
   text-align: center;
 }

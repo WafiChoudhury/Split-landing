@@ -7,6 +7,7 @@ import thirdImage from '../shader3.png'; // Update with the correct path to your
 import { useState } from 'react';
 import { useEffect } from 'react';
 import JoinWaitlistButton from './JoinWaitlistButton'; // Import JoinWaitlistButton component
+import ReadMoreButton from './ReadMoreButton';
 
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,7 +78,7 @@ const PageComponent = () => {
   return (
     <div className="page-wrapper">
       <motion.h1
-        className="title"
+        className="subtitle"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -85,6 +86,22 @@ const PageComponent = () => {
         SplitAI
       </motion.h1>
       
+      <motion.h1
+              className="title"
+
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1 }}
+        >
+       <span style={{ display: 'block', marginBottom: '20px' }}>
+    Monetize your GPU
+  </span>
+  <span style={{ display: 'block' }}>
+    Power ML Developers
+  </span>
+
+        </motion.h1>
+
       <div className="image-container">
         <motion.svg
           className="circle-svg"
@@ -116,14 +133,7 @@ const PageComponent = () => {
         </motion.svg>
       </div>
       <div className='first-wrapper'>
-        <motion.p
-          className="subtitle"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0 }}
-        >
-          The world's first decentralized cloud GPU marketplace
-        </motion.p>
+       
 
             </div>
 
@@ -146,7 +156,6 @@ const PageComponent = () => {
             <p className="info-description">
               Get paid by the hour while Split runs quietly in the background of your device. Split harnesses your devices extra computing power to power ML developers.
             </p>
-            <button className="read-more-btn">Read More</button>
           </div>
         </div>
 
@@ -156,7 +165,6 @@ const PageComponent = () => {
             <p className="info-description">
               Split gives enterprises and individuals powerful and cost effective access to inference, model training, and more. 
             </p>
-            <button className="read-more-btn">Read More</button>
           </div>
           <motion.div
             className="info-image-container"
