@@ -6,7 +6,6 @@ import secondImage from '../shader2.png'; // Update with the correct path to you
 import thirdImage from '../shader3.png'; // Update with the correct path to your image file
 import { useState } from 'react';
 import { useEffect } from 'react';
-import EmailForm from './EmailForm';
 import JoinWaitlistButton from './JoinWaitlistButton'; // Import JoinWaitlistButton component
 
 const FAQItem = ({ question, answer }) => {

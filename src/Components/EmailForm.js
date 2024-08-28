@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { motion } from 'framer-motion';
-import '/Users/mohammad.choudhury/Desktop/split-landing-page/src/styles/EmailForm.css'; // Import your component-specific CSS file
+import 'src/styles/EmailForm.css'; // Import your component-specific CSS file
 
 const EmailForm = () => {
   const [state, handleSubmit] = useForm("xqazknpj");
