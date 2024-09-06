@@ -1,3 +1,12 @@
+# MAKE AN UPDATE TO UI AND DEPLOY
+npm run build
+firebase deploy --only hosting,firestore
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

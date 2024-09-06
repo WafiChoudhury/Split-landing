@@ -5,15 +5,31 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(to bottom, #1B0E80, #4b6cb7);
+  background: #1a1a2e;
   padding: 20px;
   
 }
 
+.dm-sans-normal {
+ 
+  display: 'block';
+  margin-bottom: '20px';
+  
+}
+
 .title {
-  font-size: 3rem;
-  color: #C7A5A5;
-  margin-bottom: 20px;
+  font-size: 5rem;
+  margin-top: 80px;
+  color: #ffffff;
+  text-align: center;
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-bottom: 0px;
+
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .image {
@@ -21,31 +37,62 @@
   height: auto;
 }
 
-.subtitle {
-  font-size: 1.25rem;
-  color: #C7A5A5;
-  margin: 20px 0;
+
+.wafi {
+  font-size:30px;
+  color: #ffffff;
+  margin: 10px 0;
+  text-align: left;
+  padding-right: 1100px;
+}
+.subheading1 {
+  font-size:20px;
+  color: #cecccc;
+  margin: 10px 0;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .get-started-btn {
+  background-color: #1e88e500;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 15px 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  border: #ffffff 2px solid;
+  margin-top: px;
+  margin-bottom: 100px;
+  
+}
+
+
+
+.get-started-btn:hover {
+  background-color: #333;
+}
+
+.wrapper{
+  margin-top: -50px; /* Move this section further up */
+
+}
+.first-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-content: center;
-  padding: 10px 10px;
-  font-size: 1rem;
-  color: white;
-  background-color: black;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-top: -50px; /* Move this section further up */
+  padding: 0 20px;
 }
-
-.get-started-btn:hover {
-  background-color: #333;
+.subtitle {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin: 10px ; /* Reduce the margin to move it up */
+  text-align: center;
+  padding-bottom:25px;
 }
 
 .info-section {
@@ -62,9 +109,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #080429;
+  background: #1d1d1d;
   padding: 40px;
-  border-radius: 10px;
+  border-radius: 40px;
+  border-style: solid;
+  
+  border: 1px solid #333;
 }
 
 .info-image-container {
@@ -77,6 +127,7 @@
 .info-image {
   max-width: 100%;
   height: auto;
+  border-radius: 20px;
 }
 
 .info-text {
@@ -92,7 +143,7 @@
   font-size: 2.5rem;
   color: #e8e8e8;
   margin-bottom: 20px;
-  color: #C7A5A5;
+  color: #ffffff;
 
 }
 
@@ -137,23 +188,25 @@
     justify-content: center;
     width: 100%;
     padding: 20px;
+    color: #1a1a2e;
   
 }
 .section-title {
   font-size: 2.5rem;
-  color: #C7A5A5;
+  color: #ffffff;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .faq-list {
-  background-color: #1a1a2e;
+  background: #1d1d1d;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .faq-item {
   border-bottom: 1px solid #2a2a3e;
+  color: #1a1a2e;
 }
 
 .faq-question {
@@ -199,8 +252,9 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #1B0E80;
+  background-color: #0c0c0c;
   color: white;
+  overflow: hidden;
 }
 
 .circle-container {
@@ -247,6 +301,7 @@
   text-align: center;
   margin: 2rem 0;
   padding: 1rem;
+  color: white;
 }
 
 
@@ -254,7 +309,6 @@
   font-size: 2rem;
   color: #C7A5A5;
   margin-bottom: 20px;
-  margin-bottom: 0px;
 
 }
 
@@ -263,13 +317,92 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
-  padding-bottom: 200px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .company-logo {
   font-weight: 900; /* Extra bold */
-  font-size: 1rem;
-  color: #000000; /* Matt black */
+  font-size: 1.5rem;
+  color: white; /* Matt black */
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+
+@media (max-width: 400px) {
+  .page-wrapper {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin: 20px 10px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .wafi {
+    font-size: 20px;
+    padding-right: 20px;
+  }
+
+  .subheading1 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .get-started-btn {
+    font-size: 16px;
+    padding: 10px 10px;
+    margin-bottom: 50px;
+  }
+
+  .wrapper {
+    margin-top: -20px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding-bottom: 15px;
+  }
+
+  .info-block {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .info-title {
+    font-size: 1.2rem;
+  }
+
+  .info-description {
+    font-size: 0.9rem;
+  }
+
+  .faq-section, .cta-section {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circle-svg {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .engineers-section .section-title {
+    font-size: 1.5rem;
+  }
+
+  .company-logo {
+    font-size: 1rem;
+  }
 }

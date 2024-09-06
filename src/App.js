@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import PageComponent from './Components/PageComponent';// Correctly reference the PageComponent
+import PageComponent from './Components/PageComponent.js';// Correctly reference the PageComponent
 
 const App = () => {
   return (
